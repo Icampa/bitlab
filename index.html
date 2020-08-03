@@ -1,0 +1,117 @@
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <title>Bit Lab</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="stylesheet" href="style.css">    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+      $(function () {
+          $(".drag").draggable({            
+              stack: ".drag"
+          });
+      });
+  </script>
+</head>
+<body>
+
+
+<!------------------------header------------------------>
+  <div class="topnav">
+    <a href="index.html" style="float:left; font-family; width: 15%"><img src="logo.png"></a>
+    <a href="Past.html">Archive</a>
+    <a href="Upcoming.html">Upcoming Projects</a>
+    <a href="bit-zine.html">BITS Zine</a>
+    <a href="Gallery.html">Gallery</a>
+  </div>
+
+<div class="wrapper">
+
+<div class="container-five" style="padding-top:10px">
+
+  <div class="container">
+  <h1 style="margin-top: 0px">We are a space  for telling <div style="display: inline-block"><a class="Your_class" href="#" data-image="https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif" style="font-family: 'pixerregular'">stories</a></div> of what we yet don’t know, and <div style="display: inline-block"><a class="Your_class" href="#" data-image="https://media.giphy.com/media/XBJeG7FA35fuU/giphy.gif" style="font-family: 'pixerregular'">breaking</a></div> down what we already do. We like to look at the <div style="display: inline-block"><a class="Your_class" href="#" data-image="https://media.giphy.com/media/1gVlCFNBVQVeCFuY0O/giphy.gif" style="font-family: 'pixerregular'">future</a></div> as if it were the <div style="display: inline-block"><a class="Your_class" href="#" data-image="https://media.giphy.com/media/C6vGpPLdkShmU/giphy.gif" style="font-family: 'pixerregular'">past</a></div> in order to <div style="display: inline-block"><a class="Your_class" href="#" data-image="https://media.giphy.com/media/5bgLjE2iQypE1uYIeA/giphy.gif" style="font-family: 'pixerregular'">build</a></div> connections that we are truly <div style="display: inline-block"><a class="Your_class" href="#" data-image="https://media.giphy.com/media/MWSRkVoNaC30A/giphy.gif" style="font-family: 'pixerregular'">longing</a></div> for.</h1>
+</div>
+
+</div>
+
+
+<div class="container-three">
+  <h2>Now Showing: Desired Devices</h2>
+  <br>
+    <img src="desired-objects.png" alt="desired"/><br><br>
+
+  <p>What will the future of smart devices be? Will they be friend or foe? We don't quite know yet, but that gives us the perfect opportunity to imagine the ideal future. In our version of the future of smart devices, they are companions that give us energy, joy, clarity, friendship, and connection.</p><br>
+  <p>08.07.20 - 09.07.20</p><br>
+  <a href="On-Show.html"><p style="padding-bottom: 60px; font-weight:600">Learn More</p></a>
+
+</div>
+
+
+
+<div class="container-four" >
+
+    <h2>Introducing Bits Our Monthly Zine</h2><br>
+    <img src="bit-flip.gif" alt="bit">
+    <br>
+    <p>BITS is a disective exploration on a single topic. Naturally, we are inclined to think chronologically when thinking about type or categories. BITS takes a different approach, by creating self-defined categories for one given topic to guide the curation of content for a given topic.</p>
+    <br>
+    <p>08.07.20</p><br>
+    <a href="BIT.html"><p style="padding-bottom: 60px; font-weight:600">Learn More</p></a>
+
+</div>
+
+<div class="container-five">
+    <div class="slider">
+    
+      <div class="slide" id="slide-1">
+        <img src="ig.jpg" alt="img1"/>
+          </div>
+
+      <div class="slide" id="slide-2">
+        <img src="ig2.jpg" alt="img1"/>
+          </div>
+
+      <div class="slide" id="slide-3">
+        <img src="ig3.jpg" alt="img1"/>
+          </div>
+
+      <div class="slide" id="slide-4">
+        <img src="ig4.jpg" alt="img1"/>
+          </div>
+    </div>
+
+</div>
+
+
+
+
+  
+
+
+
+<!------------------------header------------------------>
+
+
+<script>
+  $(".Your_class").mouseenter(function(){
+        if ($(this).parent('div').children('div.image').length) {
+            $(this).parent('div').children('div.image').show();
+        } else {
+            var image_name=$(this).data('image');
+            var imageTag='<div class="image" style="position:absolute;">'+'<img src="'+image_name+'" alt="image" height="100" />'+'</div>';
+            $(this).parent('div').append(imageTag);
+        }
+    });
+
+    $(".Your_class").mouseleave(function(){
+        $(this).parent('div').children('div.image').hide();
+    });
+</script>
+
+</body>
+</html>
