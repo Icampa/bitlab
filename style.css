@@ -155,19 +155,20 @@ a {
   text-align: left;
   padding: 14px 30px;
   text-decoration: none;
-   font-family: 'gt_americaregular';
-    font-weight: 600;
-    font-kerning: auto;
-    word-wrap: break-word;
-    word-break:normal;
-    font-size: 1.3rem;
-    margin: 0px;
-    letter-spacing:.5px;
+  font-family: 'gt_americaregular';
+  font-weight: 600;
+  font-kerning: auto;
+  word-wrap: break-word;
+  word-break:normal;
+  font-size: 1.3rem;
+  margin: 0px;
+  letter-spacing:.5px;
 }
 
   @media screen and (max-width: 940px){
 .topnav a {
   padding: 8px 8px 8px 8px;
+  font-size: .88rem;
 }
 }
 
@@ -253,6 +254,18 @@ div.container-two {
     padding-bottom: 60px;
   }
 
+
+@media screen and (max-width: 940px){
+div.container-three {
+    grid-column: 1 /span 8;
+    margin: 0px;
+    padding-left:0px;
+    padding-top: 0px;
+    border-top: none;
+    border-right:none;
+}
+}
+
 .container-four{
     grid-column: 5 /span 4;
     margin-top: 0px;
@@ -261,6 +274,16 @@ div.container-two {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+@media screen and (max-width: 940px){
+div.container-four {
+    grid-column: 1 /span 8;
+    margin: 0px;
+    padding-left:0px;
+    padding-top: 0px;
+    border-top: none;
+}
+}
 
 .container-five{
     grid-column: 1 /span 8;
