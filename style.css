@@ -114,6 +114,28 @@ a {
   color: black;
 }
 
+#gal-p{
+  padding-right: 60px;
+}
+
+  @media screen and (max-width: 940px){
+#gal-p {
+  padding: 0px;
+}
+}
+
+#item{
+  padding-top: 60px;
+}
+
+  @media screen and (max-width: 940px){
+#item {
+  padding-top: 30px;
+}
+}
+
+
+
 /*------------------Marquee------------------*/
 
 .content {
@@ -261,10 +283,10 @@ div.container-two {
 div.container-three {
     grid-column: 1 /span 8;
     margin: 0px;
-    padding-left:0px;
-    padding-top: 0px;
+    padding:0px;
     border-top: none;
     border-right:none;
+    padding-bottom: 30px;
 }
 }
 
@@ -284,6 +306,7 @@ div.container-four {
     padding-left:0px;
     padding-top: 0px;
     border-top: none;
+    padding-bottom: 30px;
 }
 }
 
@@ -294,6 +317,14 @@ div.container-four {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media screen and (max-width: 940px){
+div.container-five {
+    grid-column: 1 /span 8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+}
 
 /*----------------------------------horizontal scroll----------------------------------*/
 
@@ -319,6 +350,12 @@ scroll-snap-type: x mandatory;
   word-break: break-word;
   font-kerning:auto;
   padding: 30px;
+}
+
+  @media screen and (max-width: 940px){
+div.slide {
+  padding: 5px;
+}
 }
 
 .slides > div {
