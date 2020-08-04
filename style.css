@@ -69,7 +69,7 @@ h1{
 
  @media screen and (max-width: 940px){
 h1 {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   line-height: 2.5rem
 }
 }
@@ -83,6 +83,7 @@ h2{
     font-size: 1.2rem;
     margin: 0px;
 }
+
 
 
 h3{
@@ -99,7 +100,8 @@ h3{
 
   @media screen and (max-width: 940px){
 h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding: 0px;
 }
 }
 
@@ -168,7 +170,7 @@ a {
   @media screen and (max-width: 940px){
 .topnav a {
   padding: 8px 8px 8px 8px;
-  font-size: .88rem;
+  font-size: .89rem;
 }
 }
 
