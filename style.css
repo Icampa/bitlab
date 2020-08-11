@@ -136,35 +136,6 @@ a {
 
 
 
-/*------------------Marquee------------------*/
-
-.content {
-  color: white;
-}
-
-.marquee {
-  position: sticky;
-  width: 100vw;
-  max-width: 100%;
-  height: 20px;
-  overflow-x: hidden;
-  background-color: black;
-  margin-top:0px;
-}
-
-.track {
-  position: sticky;
-  white-space: nowrap;
-  will-change: transform;
-  animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-
 /*------------------NAV------------------*/
 
 .topnav {
@@ -191,10 +162,53 @@ a {
 
   @media screen and (max-width: 940px){
 .topnav a {
-  padding: 8px 8px 8px 8px;
-  font-size: .89rem;
+  display: none;
 }
 }
+
+.minimenu{
+	display: none;
+}
+
+  @media screen and (max-width: 940px){
+div.minimenu {
+  display: inline-block;
+}
+}
+
+.dropdown {
+  position: relative;
+  float: right;
+  padding-right: 10px;
+  font-size:20px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  left:auto;
+  right:0;
+    font-family: 'gt_americaregular'; 
+    font-weight: 600;
+    font-kerning: auto;
+    word-wrap: break-word;
+    word-break:normal;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  float:left;
+}
+
 
   @media screen and (max-width: 940px){
 #logo a {
@@ -221,6 +235,13 @@ a {
     width: 100%;
     height: 100%;
     padding: 30px;
+}
+
+
+  @media screen and (max-width: 940px){
+div.wrapper {
+  padding: 10px;
+}
 }
 
 
