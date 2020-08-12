@@ -20,54 +20,34 @@
 <body>
 
 <!------------------------header------------------------>
-  <div class="topnav">
-    <a href="index.html" style="float:left; font-family; width: 20%"><img src="logo.png"></a>
-    <a href="Past.html">Archive</a>
-    <a href="Upcoming.html">Upcoming Projects</a>
-    <a href="bit-zine.html">BITS Zine</a>
-    <a href="Gallery.html">Gallery</a>
-  </div>
-
-
-<div class="minimenu">
-<a href="index.html" style="float:left; font-family; width: 40%; padding-top:10px; padding-left:10px"><img src="logo.png"></a>
-
-<div class="dropdown">
-  <span><br>☰<br></span>
-  <div class="dropdown-content">
-    <a href="Past.html">Archive</a><br>
-    <a href="Upcoming.html">Upcoming Projects</a><br>
-    <a href="bit-zine.html">BITS Zine</a><br>
-    <a href="Gallery.html">Gallery</a>
-  </div>
-</div>
-</div>
+  <header>
+    <a href="index.html" id="logo"><img src="logo.png"></a>
+    <nav><h3>
+      <a href="Gallery.html">Gallery</a>
+      <a class="link" href="bit-zine.html">BITS</a>
+      <a class="link" href="Archive.html">Archive</a>
+      <a class="link" href="Past.html">Contact</a>
+    </h3></nav>
+  </header>
   
-<div class="wrapper">
 
-<div class="container-five">
-  <div class="row">
-    <div class="column">
+
+<section class="proj">
+    <div id="blurb-left" style="border-right:none">
       <h1 style="font-family:'sporting_grotesqueregular'">Desired Devices</h1>
       <h2>08.07.20</h2>
       <br>
       <h3 id="gal-p">What will the future of smart devices be? Will they be friend or foe? We don't quite know yet, but that gives us the perfect opportunity to imagine the ideal future. This project is a result of study of building and interacting with objects as a form of critiquing our technological practices today.</h3>
-      <br>
-
     </div>
 
-    <div class="column" style="padding-bottom: 60px">
-      <img src="desired-objects.png">
-  </div>
-  <br>
-  </div>
-</div>
+    <div id="blurb-right">
+        <img src="desired-objects.png">
+    </div>
+</section>
 
 
-<div class="container-five">
-
-  <div class="row">
-    <div class="column">
+<section class="proj">
+    <div id="blurb-left">
       <h1>Bloom</h1>
       <h2>Growth System</h2>
       <br>
@@ -79,6 +59,7 @@
       <br>
       <p id="gal-p">As world begins to operate in a more distant way, humans interact with other humans less, but more with objects. This leaves a longing desire to connect with living things. Bloom is a plant growing system that operates on human feelings and provides visual output of the moods and interactions with the user.</p>
       <br><br>
+
       <div class="row">
         <div class="column">
           <img src="bloom.gif">
@@ -89,19 +70,15 @@
       </div>
     </div>
 
-    <div class="column">
+    <div id="blurb-right">
         <img src="bloom-sketch.png">
     </div>
-  </div>
-
-
-<hr>
+</section>
 
 
 
-  <div class="row" id="item">
-
-    <div class="column">
+<section class="proj">
+    <div id="blurb-left">
       <h1>MIMS</h1>
       <h2>Friend Bot</h2>
       <br>
@@ -121,19 +98,17 @@
           <img src="mims-demo.gif">
         </div>
       </div>
-  </div>
-
-    <div class="column" >
-        <img src="mims-sketch.png">
     </div>
 
-</div>
+    <div id="blurb-right">
+        <img src="mims-sketch.png">
+    </div>
+</section>
 
-<hr>
 
 
-  <div class="row" id="item">
-    <div class="column">
+<section class="gallery">
+    <div id="blurb-left">
       <h1>Lume</h1>
       <h2>Joy Band</h2>
       <br>
@@ -155,18 +130,15 @@
       </div>
     </div>
 
-    <div class="column">
+    <div id="blurb-right">
         <img src="lume-sketch.png">
     </div>
-  </div>
+</section>
 
 
-<hr>
 
-
-<div class="row" id="item">
-
-    <div class="column">
+<section class="gallery">
+    <div id="blurb-left">
        <h1>Charged</h1>
         <h2>Energy Patch</h2>
         <br>
@@ -187,19 +159,18 @@
             <img src="charged-demo.gif">
         </div>
       </div>
-  </div>
+    </div>
 
-  <div class="column">
-      <img src="charged-sketch.png">
-  </div>
-
-</div>
-
-<hr>
+    <div id="blurb-right">
+        <img src="charged-sketch.png">
+    </div>
+</section>
 
 
-  <div class="row" id="item">
-    <div class="column" style="padding-right: 30px">
+
+
+<section class="gallery">
+    <div id="blurb-left">
         <h1>Breakbot</h1>
         <h2>Thought Visualizer</h2>
         <br>
@@ -221,53 +192,30 @@
         </div>
     </div>
 
-    <div class="column">
+    <div id="blurb-right">
         <img src="breakbot-sketch.png">
     </div>
+</section>
+
+
+
+<section class="gallery">
+  <div id="blurb-left">
+    <h3>Bit Lab is a place for research into contemporary topics relating to technology, user, and lifestyle. We are a self publishing plarform and are continue our research and publication with the help of our reader input. We welcome all input and collaboration opporunities to foster the growth of Bit Lab.</h3>
   </div>
 
+    <div id="blurb-right">
+        <h2>Sign up for our email updates</h2><br>
+        <p>Sign up here to never miss a project.</p>
+        <br><br>
+        <form action="/action_page.php">
+          <label for="email"><p>Email address:</label>
+          <input type="email" id="email" name="email">
+          <input type="submit" style="background-color: black; color: white; font-family:'sporting_grotesqueregular'"></p>
+        </form>
+    </div>
+</section>
 
-</div>
-
-
-<div class="container-three">
-  <div class="row">
-    <div class="column">
-    <img src="tshirt.png" style="padding:10px">
-  </div>
-
-    <div class="column">
-       <br><br>
-    <p>If you enjoyed th is project please help us to continue exploring new topics by buying our Desired Objects Archive T-shirt.</p>
-    <p>$20.00</p><br>
-    <a href="BIT.html"><p style="padding-bottom: 60px; font-weight:600">Learn More</p></a>
-  </div>
-
-</div>
- </div> 
-
-<div class="container-four">
-
-  <h2>Sign up for BITS</h2><br>
-  <p>Sign up here to never miss a project.</p>
-  <br><br>
-  <form action="/action_page.php">
-    <label for="email"><p>Email address:</label>
-    <input type="email" id="email" name="email">
-    <input type="submit" style="background-color: black; color: white; font-family:'sporting_grotesqueregular'"></p>
-  </form>
-
- </div> 
-
-
-
-
-</div>
-  
-
-
-
-<!------------------------header------------------------>
 
 
 </body>
